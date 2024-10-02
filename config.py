@@ -1,0 +1,5 @@
+
+
+MODEL_INPUT_IMAGE_SIZE = 1024
+IMAGE_SOURCE = "./images"
+OUTPUT_FILE = "captions.txt"
