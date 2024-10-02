@@ -15,5 +15,8 @@ pip install pillow transformers requests torch
 # Freeze dependencies to a requirements.txt file
 pip freeze > requirements.txt
 
+# Set the Hugging Face cache directory
+export HUGGINGFACE_HUB_CACHE="D:/hf_cache_directory"
+
 echo "Virtual environment setup is complete. To activate it, run:"
 echo "source venv/bin/activate"

@@ -9,10 +9,13 @@ REM Upgrade pip to the latest version
 python -m pip install --upgrade pip
 
 REM Install required dependencies
-pip install pillow transformers requests torch
+pip install pillow transformers requests torch accelerate torchvision
 
 REM Freeze dependencies to a requirements.txt file
 pip freeze > requirements.txt
 
 echo Virtual environment setup is complete. To activate it, run:
-echo .\venv\Scripts\Activate
+call .\venv\Scripts\Activate
+
+REM Set the Hugging Face cache directory
+set HUGGINGFACE_HUB_CACHE=D:\hf_cache_directory
